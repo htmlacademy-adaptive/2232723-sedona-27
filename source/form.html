@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Седона</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="page-body">
   <header class="main-header">
@@ -38,6 +39,7 @@
 
   <main class="form-container">
     <h1 class="visually-hidden">Форма отзыва</h1>
+    <img class="form-hero" src="/source/img/back-catalog-mobile.jpg" width="320" height="180" alt="фото скалы">
     <section class="review">
       <div class="review__wrapper">
         <header class="review__header">
@@ -80,7 +82,7 @@
 
         <div class="review__form">
           <h2 class="review__title">Ваше общее впечатление:</h2>
-          <form class="review__content" action="https://echo.htmlacademy.ru/" method="get">
+          <form class="review__content review__content--radio" action="https://echo.htmlacademy.ru/" method="get">
             <input class="review__control--input" name="mind" type="radio" value="positive-mind" checked>
             <label class="review__control">Скорее положительное</label>
             <input class="review__control--input" name="mind" type="radio" value="negative-mind">
@@ -92,7 +94,7 @@
 
         <div class="review__form">
           <h2 class="review__title">Посещенные достопримечательности:</h2>
-          <form class="review__content" action="https://echo.htmlacademy.ru/" method="get">
+          <form class="review__content review__content--check" action="https://echo.htmlacademy.ru/" method="get">
             <input class="review__control--input" name="bridge" type="checkbox" value="bridge-devil" checked>
             <label class="review__control">Мост Дьявола</label>
             <input class="review__control--input" name="mountin" type="checkbox" value="mountin-bell" checked>
@@ -106,8 +108,9 @@
 
         <div class="review__form">
           <h2 class="review__title">Опишите свои эмоции:</h2>
-          <form class="review__content" action="https://echo.htmlacademy.ru/" method="get">
-            <input class="review__description" type="text" placeholder="Опишите подробно все свои восторги">
+          <form class="review__content" action="https://echo.htmlacademy.ru/" method="post">
+            <p><textarea class="review__description" rows="10" cols="45" name="text">Опишите подробно все свои восторги</textarea></p>
+            <!--<input class="review__description" type="text" placeholder="Опишите подробно все свои восторги">-->
             </form>
             <button class="review__button">Отправить отзыв</button>
             <span class="review__text">* - обязательные поля</span>
@@ -179,7 +182,7 @@
 
   </footer>
 
-  <div class="modal-fail">
+  <div class="modal-fail modal-fail__close">
 
       <section class="modal-fail__content">
         <h2 class="modal-fail__title">Что-то пошло не так!</h2>
@@ -189,7 +192,7 @@
 
   </div>
 
-  <div class="modal-success">
+  <div class="modal-success modal-success__close">
 
     <section class="modal-success__content">
       <h2 class="modal-success__title">Ваш отзыв отправлен!</h2>

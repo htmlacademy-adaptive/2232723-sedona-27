@@ -1,1 +1,40 @@
-// Начните писать стили здесь
+@import "./blocks/main-header.less";
+@import "./blocks/main-container.less";
+@import "./blocks/advantages.less";
+@import "./blocks/newslatter.less";
+@import "./blocks/main-footer.less";
+@import "./blocks/catalog-container.less";
+@import "./blocks/promo.less";
+@import "./blocks/form-container.less";
+@import "./blocks/review__form.less";
+@import "./blocks/modal-fail.less";
+@import "./blocks/modal-success.less";
+@import "./blocks/fonts.less";
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+}
+
+.page-body {
+  background-color: hsl(0, 4%, 90%);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
+}
+
