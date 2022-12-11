@@ -2,44 +2,50 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Седона</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="page-body">
   <header class="main-header">
+    <div class="main-nav__wrapper">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a class="main-nav__link" href="index.html">Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a class="main-nav__link" href="catalog.html">Фото и видео</a>
+        </li>
+        </ul>
+        </div>
     <a class="main-header__logo">
       <img src="../source/img/logo.png" width="185" height="96" alt="Логотип Седоны">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
+        <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2"/>
+          <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2"/>
+          <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2"/>
+          </svg>
       </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="catalog.html">Фото и видео</a>
-          </li>
-        </ul>
+      </nav>
+        <div class="main-nav__wrapper">
         <ul class="main-nav__list user-list">
           <li class="user-list__item">
-            <a href="form.html">Форма отзыва</a>
+            <a class="main-nav__link" href="form.html">Форма отзыва</a>
           </li>
           <li class="user-list__item">
-            <a href="#">HTML Academy</a>
+            <a class="main-nav__link" href="#">HTML Academy</a>
           </li>
-
         </ul>
       </div>
-    </nav>
-
   </header>
 
   <main class="form-container">
     <h1 class="visually-hidden">Форма отзыва</h1>
-    <img class="form-hero" src="/source/img/back-catalog-mobile.jpg" width="320" height="180" alt="фото скалы">
+    <img class="form-hero" src="/source/img/back-catalog.jpg" width="320" height="180" alt="фото скалы">
     <section class="review">
       <div class="review__wrapper">
         <header class="review__header">
@@ -48,7 +54,9 @@
 
         </header>
         <div class="review__form">
+
           <h2 class="review__title">Представьтесь:</h2>
+
           <form class="review__content" action="https://echo.htmlacademy.ru/" method="post">
             <label class="review__name" for="name">Имя*:</label>
             <input class="review__input" id="name" type="text" placeholder="Пётр">
@@ -58,10 +66,11 @@
             <input class="review__input" id="last-name" type="text" placeholder="Викторович">
 
           </form>
-        </div>
-        <div class="review__form">
-          <h2 class="review__title">Контактная информация:</h2>
-          <form class="review__content" action="https://echo.htmlacademy.ru/" method="post">
+
+
+          <h2 class="review__title review__title--contact">Контактная информация:</h2>
+
+          <form class="review__content--contact" action="https://echo.htmlacademy.ru/" method="post">
             <label class="review__contact" for="phone">Контактный телефон*:</label>
             <input class="review__input--contact" id="phone" type="text" placeholder="Введите телефон">
             <span class="review__icon">
@@ -72,17 +81,18 @@
             <label class="review__contact" for="email">Электронная почта*:</label>
             <input class="review__input--contact" id="email" type="text" placeholder="Введите e-mail">
             <span class="review__icon">
-              <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="18" height="18" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M8 8C7.7 8 7.5 7.9 7 7.7L0 4V11C0 11.5 0.5 12 1 12H15C15.5 12 16 11.5 16 11V4L9 7.7C8.5 7.9 8.3 8 8 8ZM15 0H1C0.5 0 0 0.5 0 1V1.8L8 6L16 1.8V1C16 0.5 15.5 0 15 0Z" fill="black"/>
                 </svg>
             </span>
 
           </form>
+
         </div>
 
-        <div class="review__form">
+        <div class="review__form--radio">
           <h2 class="review__title">Ваше общее впечатление:</h2>
-          <form class="review__content review__content--radio" action="https://echo.htmlacademy.ru/" method="get">
+          <form class="review__content--radio" action="https://echo.htmlacademy.ru/" method="get">
             <input class="review__control--input" name="mind" type="radio" value="positive-mind" checked>
             <label class="review__control">Скорее положительное</label>
             <input class="review__control--input" name="mind" type="radio" value="negative-mind">
@@ -92,9 +102,9 @@
           </form>
         </div>
 
-        <div class="review__form">
+        <div class="review__form--check">
           <h2 class="review__title">Посещенные достопримечательности:</h2>
-          <form class="review__content review__content--check" action="https://echo.htmlacademy.ru/" method="get">
+          <form class="review__content--check" action="https://echo.htmlacademy.ru/" method="get">
             <input class="review__control--input" name="bridge" type="checkbox" value="bridge-devil" checked>
             <label class="review__control">Мост Дьявола</label>
             <input class="review__control--input" name="mountin" type="checkbox" value="mountin-bell" checked>
@@ -106,9 +116,9 @@
           </form>
         </div>
 
-        <div class="review__form">
+        <div class="review__form--input">
           <h2 class="review__title">Опишите свои эмоции:</h2>
-          <form class="review__content" action="https://echo.htmlacademy.ru/" method="post">
+          <form class="review__content--input" action="https://echo.htmlacademy.ru/" method="post">
             <p><textarea class="review__description" rows="10" cols="45" name="text">Опишите подробно все свои восторги</textarea></p>
             <!--<input class="review__description" type="text" placeholder="Опишите подробно все свои восторги">-->
             </form>
