@@ -17,6 +17,16 @@
   color: #000000;
   margin: 0;
   margin-top: 38px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    margin-top: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    padding-top: 61px;
+  }
 }
 
 .newslatter__description {
@@ -28,10 +38,19 @@
   color: #333333;
   margin: 0;
   padding-top: 28px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    padding: 40px 167px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 50px 400px 46px;
+  }
 }
 
 .newslatter__button {
-  background-color: #81B3D2;
+  background-color: hsl(203, 47%, 66%);
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
@@ -42,8 +61,28 @@
   height: 58px;
   border: none;
   margin: 32px 18px 48px;
+
+  @media (min-width: @tablet-width) {
+    width: 458px;
+    margin: 0;
+    margin-left: 160px;
+    margin-bottom: 58px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 371px;
+    margin-bottom: 66px;
+  }
 }
 
 .newslatter__map {
   display: block;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
 }

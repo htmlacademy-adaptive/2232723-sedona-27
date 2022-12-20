@@ -3,6 +3,30 @@
   flex-direction: column;
   background-color: #ffffff;
   width: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__header {
+    margin: 0 auto;
+    margin-bottom: 56px;
+    width: 520px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__header {
+    width: 484px;
+    margin: 0 auto;
+    margin-bottom: 56px;
+  }
 }
 
 .advantages__slogan {
@@ -14,6 +38,15 @@
   margin: 0;
   padding: 0;
   margin-top: 32px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    margin-top: 59px;
+  }
 }
 
 .advantages__intro {
@@ -30,12 +63,13 @@
 
 .advantages__list {
   list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 0;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .advantages__item--white {
@@ -45,34 +79,174 @@
   display: flex;
   flex-wrap: wrap;
   margin: 24px 18px;
+
+  @media (min-width: @tablet-width) {
+    width: 256px;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+    padding: 0;
+  }
 }
 
 .advantages__item--icon {
   width: 39px;
   height: 37px;
+
+  @media (min-width: @tablet-width) {
+    width: 70px;
+    height: 70;
+    margin-top: 60px;
+  }
 }
 
 .advantages__item--blue {
   background-color: hsl(203, 47%, 66%);
   color: #ffffff;
   padding: 33px 18px 40px;
+
+  @media (min-width: @tablet-width) {
+    width: 256px;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+    padding: 0;
+  }
 }
 
 .advantages__item--grey {
-  background-color: #EEEEEE;
+  background-color: hsl(0, 0%, 93%);
   padding: 24px 26px;
+
+  @media (min-width: @tablet-width) {
+    width: 256px;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+    padding: 0;
+  }
 }
 
 .advantages__item--photo {
   width: 320px;
   height: 260px;
   display: block;
+
+  @media (min-width: @tablet-width) {
+    width: 512px;
+    height: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
+  }
 }
 
 .advantages__title {
   text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 21px;
+  }
 }
 
 .advantages__description {
   text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-weight: 400;
+    font-size: 14px;
+  }
+}
+
+.advantages__title--blue {
+  @media (min-width: @tablet-width) {
+    padding: 42px 53px 20px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    padding-top: 52px;
+    padding-bottom: 25px;
+  }
+}
+
+.advantages__description--blue {
+  @media (min-width: @tablet-width) {
+    padding: 20px 33px 41px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 25px 60px 51px;
+  }
+}
+
+.advantages__title--white {
+  @media (min-width: @tablet-width) {
+    padding-top: 26px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    padding-top: 28px;
+  }
+}
+
+.advantages__description--white {
+  @media (min-width: @tablet-width) {
+    padding: 25px 33px 60px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 28px 60px 69px;
+  }
+}
+
+.advantages__title--grey {
+  @media (min-width: @tablet-width) {
+    padding: 50px 63px 20px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 52px 150px 25px;
+  }
+}
+
+.advantages__description--grey {
+  @media (min-width: @tablet-width) {
+    padding: 20px 33px 50px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 25px 70px 51px;
+  }
 }

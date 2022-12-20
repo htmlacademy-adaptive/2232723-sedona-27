@@ -2,36 +2,34 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Седона</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="page-body">
   <header class="main-header">
-    <a class="main-header__logo">
-      <img src="../source/img/logo.png" width="185" height="96" alt="Логотип Седоны">
+    <a class="main-header__logo logo">
+      <img class="logo" src="./img/logo.png" width="185" height="96" alt="Логотип Седоны">
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="catalog.html">Фото и видео</a>
-          </li>
-        </ul>
-        <ul class="main-nav__list user-list">
-          <li class="user-list__item">
-            <a href="form.html">Форма отзыва</a>
-          </li>
-          <li class="user-list__item">
-            <a href="#">HTML Academy</a>
-          </li>
-
-        </ul>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="catalog.html">Фото и видео</a>
+        </li>
+        <li class="main-nav__item">
+        <a class="main-nav__link" href="form.html">Форма отзыва</a>
+        </li>
+        <li class="main-nav__item">
+        <a class="main-nav__link" href="#">HTML Academy</a>
+        </li>
+      </ul>
       </div>
     </nav>
 
@@ -39,7 +37,7 @@
 
   <main class="form-container">
     <h1 class="visually-hidden">Форма отзыва</h1>
-    <img class="form-hero" src="/source/img/back-catalog-mobile.jpg" width="320" height="180" alt="фото скалы">
+    <img class="form-hero" src="./img/back-hero.jpg" width="320" height="180" alt="фото скалы">
     <section class="review">
       <div class="review__wrapper">
         <header class="review__header">
@@ -48,7 +46,7 @@
 
         </header>
         <div class="review__form">
-          <h2 class="review__title">Представьтесь:</h2>
+          <h2 class="review__title review__title--one">Представьтесь:</h2>
           <form class="review__content" action="https://echo.htmlacademy.ru/" method="post">
             <label class="review__name" for="name">Имя*:</label>
             <input class="review__input" id="name" type="text" placeholder="Пётр">
@@ -60,8 +58,8 @@
           </form>
         </div>
         <div class="review__form">
-          <h2 class="review__title">Контактная информация:</h2>
-          <form class="review__content" action="https://echo.htmlacademy.ru/" method="post">
+          <h2 class="review__title review__title--two">Контактная информация:</h2>
+          <form class="review__content review__content--contact" action="https://echo.htmlacademy.ru/" method="post">
             <label class="review__contact" for="phone">Контактный телефон*:</label>
             <input class="review__input--contact" id="phone" type="text" placeholder="Введите телефон">
             <span class="review__icon">
@@ -81,7 +79,7 @@
         </div>
 
         <div class="review__form">
-          <h2 class="review__title">Ваше общее впечатление:</h2>
+          <h2 class="review__title review__title--three">Ваше общее впечатление:</h2>
           <form class="review__content review__content--radio" action="https://echo.htmlacademy.ru/" method="get">
             <input class="review__control--input" name="mind" type="radio" value="positive-mind" checked>
             <label class="review__control">Скорее положительное</label>
@@ -93,7 +91,7 @@
         </div>
 
         <div class="review__form">
-          <h2 class="review__title">Посещенные достопримечательности:</h2>
+          <h2 class="review__title review__title--four">Посещенные достопримечательности:</h2>
           <form class="review__content review__content--check" action="https://echo.htmlacademy.ru/" method="get">
             <input class="review__control--input" name="bridge" type="checkbox" value="bridge-devil" checked>
             <label class="review__control">Мост Дьявола</label>
@@ -107,7 +105,7 @@
         </div>
 
         <div class="review__form">
-          <h2 class="review__title">Опишите свои эмоции:</h2>
+          <h2 class="review__title review__title--five">Опишите свои эмоции:</h2>
           <form class="review__content" action="https://echo.htmlacademy.ru/" method="post">
             <p><textarea class="review__description" rows="10" cols="45" name="text">Опишите подробно все свои восторги</textarea></p>
             <!--<input class="review__description" type="text" placeholder="Опишите подробно все свои восторги">-->
@@ -201,7 +199,7 @@
     </section>
 
 </div>
-
+  <script src="./js/script.js"></script>
   </body>
   </html>
 

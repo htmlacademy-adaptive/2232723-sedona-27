@@ -2,43 +2,41 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Седона</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="page-body">
   <header class="main-header">
-    <a class="main-header__logo">
-      <img src="../source/img/logo.png" width="185" height="96" alt="Логотип Седоны">
+    <a class="main-header__logo logo">
+      <img class="logo" src="./img/logo.png" width="185" height="96" alt="Логотип Седоны">
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="catalog.html">Фото и видео</a>
-          </li>
-        </ul>
-        <ul class="main-nav__list user-list">
-          <li class="user-list__item">
-            <a href="form.html">Форма отзыва</a>
-          </li>
-          <li class="user-list__item">
-            <a href="#">HTML Academy</a>
-          </li>
-
-        </ul>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="catalog.html">Фото и видео</a>
+        </li>
+        <li class="main-nav__item">
+        <a class="main-nav__link" href="form.html">Форма отзыва</a>
+        </li>
+        <li class="main-nav__item">
+        <a class="main-nav__link" href="#">HTML Academy</a>
+        </li>
+      </ul>
       </div>
     </nav>
 
   </header>
 
   <main class="catalog-container">
-    <img class="catalog-container__photo" src="/source/img/back-catalog-mobile.jpg" width="320px" height="180px" alt="фото скалы">
+    <img class="catalog-container__photo" src="./img/back-hero.jpg" width="320px" height="180px" alt="фото скалы">
     <h1 class="visually-hidden">Седона</h1>
     <section class="media">
       <div class="media__wrapper">
@@ -49,7 +47,7 @@
         </header>
         <ul class="media__list">
           <li class="media__item">
-            <img class="media__photo" src="../source/img/photo-1-mobile.jpg" width="280" height="280" alt="Неродные просторы">
+            <img class="media__photo" src="./img/catalog-1.jpg" width="280" height="280" alt="Неродные просторы">
             <p class="media__title">Неродные просторы</p>
             <p class="media__description">Автор фото: Борис</p>
             <button class="media__button" type="button">
@@ -60,7 +58,7 @@
             <span class="media__rate">1350</span>
           </li>
           <li class="media__item">
-            <img class="media__photo" src="../source/img/photo-2-mobile.jpg" width="280" height="280" alt="Местная растительность">
+            <img class="media__photo media__photo--card" src="./img/catalog-2.jpg" width="280" height="280" alt="Местная растительность">
             <p class="media__title">Местная растительность</p>
             <p class="media__description">Автор фото: Сергей</p>
             <button class="media__button" type="button">
@@ -71,7 +69,7 @@
             <span class="media__rate">143</span>
           </li>
           <li class="media__item">
-            <img class="media__photo" src="../source/img/photo-3-mobile.jpg" width="280" height="280" alt="Дорога на север">
+            <img class="media__photo media__photo--card" src="./img/catalog-3.jpg" width="280" height="280" alt="Дорога на север">
             <p class="media__title">Дорога на север</p>
             <p class="media__description">Автор фото: Петр</p>
             <button class="media__button" type="button">
@@ -82,7 +80,7 @@
             <span class="media__rate">96</span>
           </li>
           <li class="media__item">
-            <img class="media__photo" src="../source/img/photo-4-mobile.jpg" width="280" height="280" alt="Мост Дьявола">
+            <img class="media__photo media__photo--card" src="./img/catalog-4.jpg" width="280" height="280" alt="Мост Дьявола">
             <p class="media__title">Мост Дьявола</p>
             <p class="media__description">Автор фото: Антон</p>
             <button class="media__button" type="button">
@@ -102,7 +100,7 @@
       <div class="promo__wrapper">
         <h2 class="promo__title">Все еще сомневаетесь?</h2>
         <p class="promo__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <img class="promo__video" src="../source/img/video-mobile.jpg" width="280" height="177" alt="Видеопрезентация Седоны">
+        <img class="promo__video" src="./img/video.jpg" width="280" height="177" alt="Видеопрезентация Седоны">
 
       </div>
 
@@ -172,6 +170,6 @@
   </footer>
 
 
-
+  <script src="./js/script.js"></script>
   </body>
   </html>
