@@ -2,6 +2,25 @@
   background-color: #ffffff;
   width: 320px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
+}
+
+.form-hero {
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    height: 350px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
 }
 
 .review-wrapper {
@@ -36,6 +55,20 @@
   color: #000000;
   margin: 0;
   margin-top: 36px;
+
+  @media (min-width: @tablet-width) {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 26px;
+    margin: 0;
+    padding: 0;
+    margin-top: 64px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    margin-top: 115px;
+  }
 }
 
 .review__intro {
@@ -47,4 +80,22 @@
   color: #333333;
   margin: 0;
   margin-top: 24px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding: 0;
+    margin-left: 165px;
+    margin-right: 165px;
+    padding-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+    margin-left: 382px;
+    margin-right: 382px;
+    margin-bottom: 67px;
+  }
 }

@@ -1,16 +1,64 @@
 .main-container {
   width: 320px;
   margin: 0 auto;
-  background-color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
 }
 
 .main-hero {
   width: 320px;
-  height: 389px;
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    height: 518px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    height: 518px;
+  }
 }
 
 .hero-svg {
   position: absolute;
   width: 282px;
   height: 214px;
+  margin-top: -308px;
+  margin-left: 18px;
+
+  @media (min-width: @tablet-width) {
+    width: 461px;
+    height: 350px;
+    margin-top: -425px;
+    margin-left: 155px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 459px;
+    margin-top: -450px;
+    margin-left: 383px;
+  }
+}
+
+.pattern {
+  width: 320px;
+  position: absolute;
+  margin-top: -36px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    margin-top: -46px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    margin-top: -56px;
+  }
 }
